@@ -1,2 +1,2 @@
-# data_community
-This repo captures my participation in public data community projects.
+# Preppin' Data
+This repo captures my participation in the Preppin' Data's community project.
