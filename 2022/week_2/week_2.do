@@ -44,7 +44,7 @@ generate Cake_Needed_On = ""
 	replace Cake_Needed_On = "Thursday"  if day_of_week == 4
 	replace Cake_Needed_On = "Friday" 	 if day_of_week == 5
 
-// Create a two-condition count (IN PROGRESS)
+// Create a two-condition count
 egen BDs_per_Weekday_and_Month = count(id), by (Month Cake_Needed_On)
 
 // Rename, order, and remove uneccessary columns
