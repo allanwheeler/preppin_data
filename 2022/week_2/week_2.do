@@ -28,7 +28,7 @@ generate Month = ""
 	replace Month = "June" 		if month_number == 6
 	replace Month = "July" 		if month_number == 7
 	replace Month = "August" 	if month_number == 8
-	replace Month = "September" if month_number == 9
+	replace Month = "September" 	if month_number == 9
 	replace Month = "October" 	if month_number == 10
 	replace Month = "November" 	if month_number == 11
 	replace Month = "December" 	if month_number == 12
@@ -38,11 +38,11 @@ generate Month = ""
 generate day_of_week = dow(date(This_Years_Birthday, "MDY"))
 	replace day_of_week = 5 if day_of_week == 0 | day_of_week == 6
 generate Cake_Needed_On = ""
-	replace Cake_Needed_On = "Monday" 	 if day_of_week == 1
-	replace Cake_Needed_On = "Tuesday" 	 if day_of_week == 2
-	replace Cake_Needed_On = "Wednesday" if day_of_week == 3
-	replace Cake_Needed_On = "Thursday"  if day_of_week == 4
-	replace Cake_Needed_On = "Friday" 	 if day_of_week == 5
+	replace Cake_Needed_On = "Monday" 	if day_of_week == 1
+	replace Cake_Needed_On = "Tuesday" 	if day_of_week == 2
+	replace Cake_Needed_On = "Wednesday" 	if day_of_week == 3
+	replace Cake_Needed_On = "Thursday"  	if day_of_week == 4
+	replace Cake_Needed_On = "Friday" 	if day_of_week == 5
 
 // Create a two-condition count
 egen BDs_per_Weekday_and_Month = count(id), by (Month Cake_Needed_On)
