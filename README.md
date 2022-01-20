@@ -1,2 +1,2 @@
-# Preppin' Data
-This repo captures my participation in the Preppin' Data community project.
+# Preppin' Data Solutions
+This captures my participation in the Preppin' Data community project.
